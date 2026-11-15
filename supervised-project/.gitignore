@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.streamlit/secrets.toml
+
+# Candidate/job data can contain sensitive personal information.
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+artifacts/*
+!artifacts/.gitkeep
+*.joblib
+*.parquet
+*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/taxonomy/*.json
+!data/taxonomy/*.md
+!docs/*.csv
+
